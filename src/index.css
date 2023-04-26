@@ -1,13 +1,942 @@
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+ font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-y: hidden;
+  background-color: grey;
+  /* background-image: url("https://mcdn.wallpapersafari.com/medium/14/90/uxIKHX.jpg");
+  background-size: cover; */
+  
+}
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+
+.cont {
+  height: 100vh;
+  /* background-color: beige; */
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: start;
+  box-sizing: border-box; /* ensure padding and border don't affect width/height */
+}
+
+/*nth child of section*/
+/* section:nth-child(1) {
+  background-color: red;
+}
+
+section:nth-child(2) {
+  background-color: blue;
+}
+
+section:nth-child(3) {
+  background-color: green;
+} */
+
+
+
+
+
+
+.carousel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+  box-sizing: border-box; /* ensure padding and border don't affect width/height */
+}
+
+
+
+.carousel-indicators{
+  display: none;
+}
+
+.section-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+
+
+.intro-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(34, 29, 22); 
+  z-index: 1;
+}
+
+.intro-title{
+  color: white;
+}
+
+.home-title-nav{
+  height: 6rem;
+  text-align: center;
+  padding-top: 5px;
+  background-color: rgb(191, 121, 29);
+  width:100%;
+  margin-bottom: 0;
+}
+
+
+
+.home-about{
+  margin-top: 2rem;
+  width: 60%;
+  background-color: grey;
+  color: white;
+  padding: 1rem;
+}
+
+
+
+.section-2{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.service-container{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box; /* ensure padding and border don't affect width/height */
+  margin-top: 4.1rem;
+}
+
+.service-title-nav{
+  padding-top: 5px;
+  height: 4rem;
+}
+
+.service-1{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  
+}
+
+
+.service-2{
+  display: none;
+  justify-content: center;
+  
+  height: 100%;
+  flex:1;
+
+}
+
+
+.service-3{
+  display: none;
+  justify-content: center;
+  
+  height: 100%;
+  flex:1;
+}
+
+.service-title {
+  margin-top: 0;
+  text-align: center;
+
+}
+
+.service-info-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(34, 29, 22) !important;  
+}
+
+.service-info{
+  margin-top: 1rem;
+  padding: 1rem;
+  color: white;
+  background-color: gray !important; 
+  margin-bottom: 2rem; 
+}
+
+.service-img{
+  width: 500px;
+  height: 200px;
+  object-fit: cover;
+  margin-top: 2rem
+}
+
+
+
+
+
+
+
+
+.navigation{
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  z-index: 999;
+  
+}
+
+.nav-title{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  font-family: 'Bruno Ace SC', cursive;
+}
+
+.phone-num{
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.nav-link{
+  color: white;
+}
+
+.nav-link:hover{
+  color: white;
+  text-shadow: white 0px 0px 10px;
+  font-weight: bold;
+
+}
+
+.nav-active{
+  color: #9c6d34; /* set the text color to white */
+}
+
+
+.navbar-logo{
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navbar {
+  background-image: url("https://www.creativefabrica.com/wp-content/uploads/2022/03/14/Old-Black-Wood-Background-Graphics-27181912-1.jpg");
+  /* background-color: rgba(255, 255, 255, 0.5) !important;
+  box-shadow: none; */
+}
+
+.navbar * {
+  background-color: transparent !important;
+}
+
+/* .navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: #fff;
+  opacity: 0.8;
+} */
+
+
+.navbar .my-button {
+  background-color: #6c757d;
+}
+
+
+
+.nav-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger{
+  margin-right: 10px !important;
+  background-color: gray !important;
+  border-radius: 10%;
+}
+
+
+  form {
+    max-width: 70%;
+    min-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+  }
+  .message-area{
+    height: 200px;
+  }
+  
+  input[type="submit"] {
+    background-color: #2e4484;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  .email-form{
+    padding: 15rem;
+  }
+
+  
+    /* CSS */
+.button-30 {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-30:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+  
+
+
+  @media screen and (max-width: 500px) {
+  
+    .carousel{
+      height: 100px;
+      margin-top: 7rem;
+      margin-bottom: 4rem;
+      width: 100%;
+    }
+   
+
+    .carousel-img{
+      height: 200px;
+    }
+
+    .home-about{
+      padding: 1rem;
+      width: 80%;
+    }
+    .service-1 {
+      display: none;
+      height: 100%;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    
+    .service-title {
+      margin-top: 0;
+      text-align: center;
+    }
+    .service-2{
+      display: none;
+      height: 100%;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .service-3{
+      display: none;
+      height: 100%;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .show{
+      display: flex;
+    }
+
+    .service-buttons{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
+    }
+
+    .service-info{
+      height: 350px;
+      overflow-y: auto;
+      background-color: white;
+      border: rgb(34, 29, 22) solid 10px; 
+    }
+
+    .service-img{
+      width: 95%;
+    }
+
+    .button-30{
+      width: 150px;
+      font-size: 12px;
+      margin-right:10px;
+    }
+
+    form{
+      min-width: 300px;
+      max-width: 100%;
+    }
+
+    #contact{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5rem;
+      
+    }
+
+    
+
+    .email-form{
+      display: flex;
+      /* height: 300px; */
+      width: 100%;
+      padding: 0;
+    }
+
+    .nav-title{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  /* ////////////////////////////////////////////////////// */
+  /* /////////////////// 7000    /////////////////////////// */
+  /* ////////////////////////////////////////////////////// */
+
+  @media screen and (max-width: 700px) and (min-width: 500px) {
+    
+
+    .section-1{
+      justify-content: start;
+    }
+
+
+    .carousel{
+      height: 100px;
+      margin-top: 10rem;
+      margin-bottom: 8rem;
+      width: 100%;
+    }
+    
+    .carousel-img{
+      height: 255px;
+
+      
+    }
+    .service-1 {
+      display: none;
+      height: 100%;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    
+    .service-title {
+      margin-top: 0;
+      text-align: center;
+    }
+    .service-2{
+      display: none;
+      height: 100%;
+      width: 100%;
+      flex-direction: column;
+
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .service-3{
+      display: none;
+      height: 100%;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .show{
+      display: flex;
+    }
+
+    .service-buttons{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 5rem;
+    }
+
+    .service-info{
+      height: 15rem;
+      overflow-y: auto;
+      background-color: white;
+      border: rgb(34, 29, 22) solid 10px; 
+    }
+    .button-30{
+      width: 150px;
+      font-size: 12px;
+      margin-right:10px;
+    }
+
+    form{
+      /* min-width: 600px;
+      max-width: 100%; */
+      width: 70rem;
+      height: 100%;
+    }
+
+    #contact{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5rem;
+      
+    }
+
+    
+
+    .email-form{
+      display: flex;
+      /* height: 300px; */
+      width: 100%;
+      
+      padding: 0;
+    }
+
+    .nav-title{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+
+  /* ////////////////////////////////////////////////////// */
+/* /////////////////////////700 - 1000///////////////////////// */
+/* //////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+
+
+  .section-1{
+    justify-content: start;
+  }
+
+
+  .carousel{
+    height: 200px;
+    margin-top: 11rem;
+    margin-bottom: 8rem;
+    width: 100%;
+  }
+  
+  .carousel-img{
+    height: 350px;
+
+    
+  }
+  .service-1 {
+    display: none;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .service-info{
+    display: flex;
+    align-items: center;
+    width: 90%;
+  }
+  .service-title {
+    margin-top: 0;
+    text-align: center;
+  }
+  .service-2{
+    display: none;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .service-3{
+    display: none;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .show{
+    display: flex;
+  }
+
+  .service-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+  }
+
+  .service-info{
+    height: 15rem;
+    overflow-y: auto;
+    background-color: white;
+  }
+  .button-30{
+    width: 150px;
+    font-size: 12px;
+    margin-right:10px;
+    margin-left: 10px;
+  }
+
+  form{
+    /* min-width: 600px;
+    max-width: 100%; */
+    width: 70rem;
+    height: 100%;
+  }
+
+  #contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    
+  }
+
+  
+
+  .email-form{
+    display: flex;
+    /* height: 300px; */
+    width: 100%;
+    
+    padding: 0;
+  }
+
+  .nav-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+/* ////////////////////////////////////////////////////// */
+/* /////////////////////////1000 - 1500///////////////////////// */
+/* //////////////////////////////////////////////////////// */
+
+
+@media screen and (max-width: 1500px) and (min-width: 1000px) {
+
+  .section-1{
+    justify-content: start;
+  }
+
+
+  .carousel{
+    height: 200px;
+    margin-top: 12rem;
+    margin-bottom: 8rem;
+    width: 80%;
+  }
+ 
+  .carousel-img{
+    height: 400px;
+    width: 200px;
+
+    
+  }
+  .home-about{
+    padding:2rem ;
+
+  }
+
+  .service-1 {
+    display: none;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .service-info{
+    display: flex;
+    align-items: center;
+    width: 90%;
+  }
+  .service-title {
+    margin-top: 0;
+    text-align: center;
+  }
+  .service-2{
+    display: none;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .service-3{
+    display: none;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .show{
+    display: flex;
+  }
+
+  .service-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+  }
+
+  .service-info{
+    height: 15rem;
+    overflow-y: auto;
+    background-color: white;
+  }
+  .button-30{
+    width: 150px;
+    font-size: 12px;
+    margin-right:10px;
+    margin-left: 10px;
+  }
+
+  form{
+    /* min-width: 600px;
+    max-width: 100%; */
+    width: 70rem;
+    height: 100%;
+  }
+
+  #contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    
+  }
+
+  
+
+  .email-form{
+    display: flex;
+    /* height: 300px; */
+    width: 100%;
+    
+    padding: 0;
+  }
+
+  .nav-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+/* ///////////////////////////////////////////////////// */
+/* /////////////////////1500 - MAX/////////////////////// */
+/* ///////////////////////////////////////////////////// */
+
+
+@media screen and (min-width: 1500px) {
+
+  .section-1{
+    justify-content: start;
+  }
+
+
+  .carousel{
+    height: 200px;
+    margin-top: 12rem;
+    margin-bottom: 8rem;
+    width: 80%;
+  }
+  .carousel-indicators{
+    display: none;
+  }
+  .carousel-img{
+    height: 400px;
+    width: 200px;
+
+    
+  }
+  .home-about{
+    padding:2rem ;
+
+  }
+
+  .service-1 {
+    display: none;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .service-info{
+    display: flex;
+    align-items: center;
+    width: 90%;
+  }
+  .service-title {
+    margin-top: 0;
+    text-align: center;
+  }
+  .service-2{
+    display: none;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .service-3{
+    display: none;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .show{
+    display: flex;
+  }
+
+  .service-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+  }
+
+  .service-info{
+    height: 15rem;
+    overflow-y: auto;
+    background-color: white;
+  }
+  .button-30{
+    width: 150px;
+    font-size: 12px;
+    margin-right:10px;
+    margin-left: 10px;
+  }
+
+  form{
+    min-width: 600px;
+    max-width: 100%; 
+    width: 70rem;
+    height: 100%;
+  }
+
+  #contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+  }
+  
+  .email-form{
+    padding: 0;
+  }
+
 }
